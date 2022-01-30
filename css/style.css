@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Big Shoulders Display', cursive ;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.main {
+  width: 1440px;
+  background-color: hsl(0, 0%, 95%);
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media (max-width: 375px) {
+  .main {
+    width: 375px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.card {
+  width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+}
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+}
+.card div {
+  width: calc(900px / 3);
+  padding: 40px 65px 40px 40px;
+}
+@media (max-width: 375px) {
+  .card div {
+    width: 100%;
+  }
+}
+.card div:first-child {
+  background-color: hsl(31, 77%, 52%);
+}
+.card div:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card div:last-child {
+  background-color: hsl(179, 100%, 13%);
+}
+.card div h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.card div p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+@media (max-width: 375px) {
+  .card div p {
+    margin-bottom: 20px;
+  }
+}
+.card div button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .card div button {
+    left: 50px;
+  }
+}
+.card div:first-child button {
+  color: hsl(31, 77%, 52%);
+}
+.card div:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.card div:last-child button {
+  color: hsl(179, 100%, 13%);
+}
+.card div:first-child button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.card div:nth-child(2) button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.card div:last-child button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+.card div:first-child button:hover,
+.card div:nth-child(2) button:hover,
+.card div:last-child button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  padding: 10px 20px;
+}
