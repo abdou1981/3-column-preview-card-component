@@ -5,43 +5,32 @@
 }
 body {
   font-family: 'Lexend Deca', sans-serif;
-}
-.main {
-  width: 1440px;
   background-color: hsl(0, 0%, 95%);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-@media (max-width: 375px) {
-  .main {
-    width: 375px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 }
 .card {
   width: 900px;
-  background-color: white;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   overflow: hidden;
-  margin: auto;
   display: flex;
+  margin: 100px auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card {
-    width: 300px;
+    width:300px;
     flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 .card div {
-  width: calc(900px / 3);
-  padding: 40px 50px 40px 40px;
+  width: calc(100% / 3);
+  padding: 40px 65px 40px 40px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .card div {
     width: 100%;
   }
@@ -69,7 +58,7 @@ body {
   line-height: 1.6;
   margin-bottom: 50px;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card div p {
     margin-bottom: 20px;
   }
@@ -87,7 +76,7 @@ body {
   left: 50%;
   cursor: pointer;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card div button {
     left: 50px;
   }
